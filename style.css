@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
 *,
 *::before,
 *::after {
@@ -6,10 +8,97 @@
   padding: 0;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
+:root {
+  --orange-color: hsl(25, 97%, 53%);
+  --white-color: hsl(0, 0%, 100%);
+  --light-grey-color: hsl(217, 12%, 63%);
+  --medium-grey-color: hsl(216, 12%, 54%);
+  --ligther-dark-blue-color: hsl(213, 19%, 18%);
+  --dark-blue-color: hsl(213, 19%, 12%);
+  --very-dark-blue-color: hsl(216, 12%, 8%);
+  --rating-item-size: 40px;
+  --btn-height: 40px;
 }
+
+html {
+  font-size: 15px;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  color: var(--light-grey-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--very-dark-blue-color);
+}
+
+.container {
+  background-color: var(--dark-blue-color);
+  width: 320px;
+  padding: 7%;
+  border-radius: 20px;
+}
+
+.star-icon {
+  content: url("images/icon-star.svg");
+  background-color: var(--ligther-dark-blue-color);
+  padding: 12px;
+  border-radius: 50%;
+  margin-bottom: 2%;
+}
+
+.heading {
+  margin: 5% 0;
+  color: var(--white-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.text {
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 5% 0;
+}
+
+.rating-value-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  margin: 10% 0 5%;
+}
+
+.rating-item {
+  background-color: var(--ligther-dark-blue-color);
+  height: var(--rating-item-size);
+  width: var(--rating-item-size);
+  line-height: var(--rating-item-size);
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn-submit {
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 100%;
+  height: var(--btn-height);
+  border-radius: calc(var(--btn-height) / 2);
+  border: none;
+  background-color: var(--orange-color);
+  color: var(--white-color);
+  cursor: pointer;
+  margin-top: 5%;
+}
+
+.attribution {
+  font-size: 0.7rem;
+}
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--white-color);
 }
