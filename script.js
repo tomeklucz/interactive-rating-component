@@ -22,7 +22,7 @@ const ratingApp = function () {
     if (!(e.target.className === "rating-item")) return;
     clearSelection();
     e.target.classList.add("active");
-    userRating = e.target.value;
+    userRating = +e.target.innerText;
   });
   btnSubmit.addEventListener("click", function () {
     toggleBox();
