@@ -4,7 +4,6 @@ const containers = document.querySelectorAll(".container");
 const btnSubmit = document.querySelector(".btn-submit");
 const ratingItems = document.querySelectorAll(".rating-item");
 const ratingList = document.querySelector(".rating-value-list");
-const userSelection = document.querySelector(".user-selection");
 const ratingMessage = document.querySelector(".user-result-text");
 
 const toggleBox = function () {
@@ -27,7 +26,7 @@ const ratingApp = function () {
   });
   btnSubmit.addEventListener("click", function () {
     toggleBox();
-    ratingMessage.innerText = `You selected ${userRating} of 5`;
+    ratingMessage.innerText = `You selected ${userRating} out of 5`;
   });
 };
 

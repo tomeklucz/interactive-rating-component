@@ -17,6 +17,7 @@
   --dark-blue-color: hsl(213, 19%, 12%);
   --very-dark-blue-color: hsl(216, 12%, 8%);
   --rating-item-size: 40px;
+  --user-result-text-size: 30px;
   --btn-height: 40px;
 }
 
@@ -36,6 +37,7 @@ body {
   background-color: var(--very-dark-blue-color);
 }
 
+/* Reusable classes */
 .container {
   background-color: var(--dark-blue-color);
   width: 320px;
@@ -44,24 +46,24 @@ body {
   border-radius: 20px;
 }
 
+.margin {
+  line-height: 1.5;
+  margin: 5% 0;
+}
+
+.heading {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* 1st card */
 .star-icon {
   content: url("images/icon-star.svg");
   background-color: var(--ligther-dark-blue-color);
   padding: 12px;
   border-radius: 50%;
   margin-bottom: 2%;
-}
-
-.heading {
-  margin: 5% 0;
-  color: var(--white-color);
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.text {
-  line-height: 1.5;
-  margin: 5% 0;
 }
 
 .rating-value-list {
@@ -83,8 +85,8 @@ body {
 }
 
 .rating-item:hover {
+  background-color: var(--orange-color);
   color: var(--white-color);
-  background-color: var(--light-grey-color);
 }
 
 .btn-submit {
@@ -106,6 +108,8 @@ body {
   background-color: var(--white-color);
 }
 
+/* footer styles */
+
 .attribution {
   font-size: 0.7rem;
 }
@@ -114,29 +118,27 @@ body {
   color: var(--white-color);
 }
 
+/* used by JS styles  */
 .active {
-  background-color: var(--orange-color);
   color: var(--white-color);
+  background-color: var(--light-grey-color);
 }
 
 .hidden {
   display: none;
 }
 
+/* 2nd card */
 .thankyou-box {
   text-align: center;
-}
-
-.thankyou-img {
-  margin: 5% 0;
 }
 
 .user-result-text {
   background-color: var(--ligther-dark-blue-color);
   color: var(--orange-color);
-  height: 30px;
-  width: 200px;
-  margin: 5% auto;
-  border-radius: 15px;
-  line-height: 30px;
+  width: 65%;
+  margin: 5% auto 10%;
+  height: var(--user-result-text-size);
+  border-radius: calc(var(--user-result-text-size) / 2);
+  line-height: var(--user-result-text-size);
 }
