@@ -5,7 +5,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
+  - [Screenshots](#screenshots)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
@@ -13,11 +13,13 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ## Overview
 
-### Screenshot
+### Screenshots
 
-![](./images/Screenshot-1.png)
-![](./images/Screenshot-active.png)
-![](./images/Screenshot-2.png)
+<p align="center" width="100%"> 
+<img src="/screenshots/Screenshot-1.png" alt=""/>
+<img src="/screenshots/Screenshot-active.png" alt=""/>
+<img src="/screenshots/Screenshot-2.png" alt=""/>
+</p>
 
 ### Links
 
