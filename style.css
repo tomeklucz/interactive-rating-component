@@ -108,16 +108,6 @@ body {
   background-color: var(--white-color);
 }
 
-/* footer styles */
-
-.attribution {
-  font-size: 0.7rem;
-}
-
-.attribution a {
-  color: var(--white-color);
-}
-
 /* used by JS styles  */
 .active {
   color: var(--white-color);
