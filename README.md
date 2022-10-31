@@ -22,7 +22,7 @@
 ### Links
 
 - Solution URL: [GitHub repository](https://github.com/tomeklucz/interactive-rating-component)
-- Live Site URL: [Netlify](https://tomeklucz-interactive-rating-component.netlify.app/)
+- Live Site URL: [Netlify](https://tomeklucz-interactive-rating.netlify.app/)
 
 ## My process
 
